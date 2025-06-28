@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZABE Control Dashboard</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; margin: 5px; }
+        .button:hover { background: #0056b3; }
+        .suggestion { font-size: 16px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>ZABE Control Dashboard</h1>
+    <div class="suggestion">Current Suggestion: [Loading...]</div>
+    <button class="button" onclick="deleteData()">Data Graveyard</button>
+    <button class="button" onclick="resetModel()">Reset Model</button>
+    <button class="button" onclick="showAudit()">Insight Audit</button>
+    <script>
+        function deleteData() { alert('Data deleted from local storage!'); }
+        function resetModel() { alert('Model reset to default settings!'); }
+        function showAudit() { alert('Showing audit trail of suggestions...'); }
+        // Placeholder for dynamic suggestion (to be replaced with Python integration later)
+        document.querySelector('.suggestion').textContent = "Current Suggestion: Drink water at 8 AM";
+    </script>
+</body>
+</html>
