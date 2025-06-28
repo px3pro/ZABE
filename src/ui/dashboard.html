@@ -11,16 +11,24 @@
 </head>
 <body>
     <h1>ZABE Control Dashboard</h1>
-    <div class="suggestion">Current Suggestion: [Loading...]</div>
+    <div class="suggestion" id="healthSuggestion">Healthcare: [Loading...]</div>
+    <div class="suggestion" id="financeSuggestion">Finance: [Loading...]</div>
+    <div class="suggestion" id="homeSuggestion">Smart Home: [Loading...]</div>
+    <div class="suggestion" id="autoSuggestion">Automotive: [Loading...]</div>
+    <div class="suggestion" id="retailSuggestion">Retail: [Loading...]</div>
     <button class="button" onclick="deleteData()">Data Graveyard</button>
     <button class="button" onclick="resetModel()">Reset Model</button>
     <button class="button" onclick="showAudit()">Insight Audit</button>
     <script>
+        // Static suggestions (to be replaced with API later)
+        document.getElementById('healthSuggestion').textContent = "Healthcare: Therapy suggestion: Drink water at 8 AM";
+        document.getElementById('financeSuggestion').textContent = "Finance: Fraud status: Safe";
+        document.getElementById('homeSuggestion').textContent = "Smart Home: Maintenance alert: No issues";
+        document.getElementById('autoSuggestion').textContent = "Automotive: Coaching tip: Drink water";
+        document.getElementById('retailSuggestion').textContent = "Retail: Suggested item: Book";
         function deleteData() { alert('Data deleted from local storage!'); }
         function resetModel() { alert('Model reset to default settings!'); }
         function showAudit() { alert('Showing audit trail of suggestions...'); }
-        // Placeholder for dynamic suggestion (to be replaced with Python integration later)
-        document.querySelector('.suggestion').textContent = "Current Suggestion: Drink water at 8 AM";
     </script>
 </body>
 </html>
