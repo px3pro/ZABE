@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZABE Control Dashboard</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .output { font-size: 14px; margin: 5px 0; color: #333; }
+        .button { padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; margin: 5px; }
+        .button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>ZABE Control Dashboard</h1>
+    {% for line in outputs %}
+        <div class="output">{{ line }}</div>
+    {% endfor %}
+    <button class="button" onclick="location.reload()">Refresh Data</button>
+    <button class="button" onclick="alert('Data deleted!')">Data Graveyard</button>
+    <button class="button" onclick="alert('Model reset!')">Reset Model</button>
+    <button class="button" onclick="alert('Audit trail shown!')">Insight Audit</button>
+</body>
+</html>
