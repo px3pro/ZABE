@@ -1,0 +1,10 @@
+server:
+  type: aws_lambda
+  region: us-east-1
+  function_name: zabee_aggregation
+  endpoint: https://zabe-aggregation.execute-api.us-east-1.amazonaws.com/prod
+aggregation:
+  method: federated_averaging
+  privacy: differential
+  interval: 24h
+  max_devices: 1000
