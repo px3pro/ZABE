@@ -1,0 +1,7 @@
+README.md
+setup.py
+zabesdk.egg-info/PKG-INFO
+zabesdk.egg-info/SOURCES.txt
+zabesdk.egg-info/dependency_links.txt
+zabesdk.egg-info/requires.txt
+zabesdk.egg-info/top_level.txt

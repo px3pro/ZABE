@@ -10,10 +10,13 @@ setup(
         "prophet==1.1.5",
         "scikit-learn==1.3.2",
         "torch==2.3.1",
-        "pandas==2.2.2",  # Updated to a compatible version
-        "numpy==1.26.4"   # Updated to a compatible version
+        "pandas==2.0.3",
+        "numpy==1.24.3"
     ],
     author="ZABE Inc.",
-    description="ZABE SDK for privacy-first AI",
+    description="ZABE SDK for privacy-first AI (proprietary core)",
     url="https://github.com/px3pro/ZABE",
+    package_data={
+        'zabesdk': ['zabe_model.tflite', 'plugins/*.py'],
+    },
 )
