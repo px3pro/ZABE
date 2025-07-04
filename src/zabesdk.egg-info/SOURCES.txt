@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/zabesdk.egg-info/PKG-INFO
+src/zabesdk.egg-info/SOURCES.txt
+src/zabesdk.egg-info/dependency_links.txt
+src/zabesdk.egg-info/requires.txt
+src/zabesdk.egg-info/top_level.txt
