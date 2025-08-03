@@ -10,31 +10,23 @@ Features: Local processing, encrypted weight aggregation, and dynamic suggestion
 Getting Started
 Prerequisites
 
-Python 3.12.1
-Git 
-Packages: tensorflow==2.18.0, prophet==1.1.5, scikit-learn==1.3.2, torch==2.3.1, pytest==7.4.3, pandas==2.0.3, numpy==1.24.3, bandit==1.7.5, flask etc.
+Python 3.11
+Git
+Packages: tensorflow==2.17.0, prophet==1.1.5, scikit-learn==1.3.2, torch==2.3.1, pytest==7.4.3, pandas==2.0.3, numpy==1.24.3, bandit==1.7.5, flask==2.3.2, requests==2.31.0
+
+Installation
+
+git clone https://github.com/px3pro/ZABE.git
+cd ZABE
+Create virtual environment: py -3.11 -m venv .venv
+Activate: .venv\Scripts\activate (Windows)
+Install dependencies: py -3.11 -m pip install -r requirements.txt
 
 Running ZABE
-python src/app.py (port 5000).
 
-python src/examples/healthcare/medication_tracker.py.
-
-python src/personal_app.py (port 5001
-
-
-Install dependencies:pip install -r requirements.txt
-
-python==3.12.1
-tensorflow==2.18.0
-prophet==1.1.5
-scikit-learn==1.3.2
-torch==2.3.1
-pytest==7.4.3
-pandas==2.0.3
-numpy==1.24.3
-bandit==1.7.5
-flask" > requirements.txt
-
+py -3.11 src/app.py (port 5000)
+py -3.11 src/examples/healthcare/medication_tracker.py
+py -3.11 src/personal_app.py (port 5001, see URL below)
 
 Project Structure
 
@@ -57,8 +49,9 @@ Fixed: Restricted Flask host to 127.0.0.1 (see src/app.py).
 
 Deployment
 
-Planned: Upload zabe_model.tflite to AWS Lambda (us-east-1) for federated averaging.
-Status: AWS setup pending card, scheduled for July 02, 2025.
+Status: zabe_aggregation Lambda function deployed on AWS (us-east-1) on August 02, 2025. ARN: arn:aws:lambda:us-east-1:431515038193:function:zabe_aggregation
+App: Running locally at http://localhost:5001 (or use ngrok URL if public access needed, e.g., https://<ngrok-id>.ngrok-free.app).
+Next Steps: Integrate API Gateway for public access post-launch.
 
 For Developers
 
@@ -74,6 +67,7 @@ Industries: Trial SDK ($500–$50K/month), sales@zabe.ai.
 Partners: Academic (research credits), Non-Profit (endorsement), Tech (Samsung, Apple, Tesla), contact research@zabe.ai.
 
 Monetization
+
 SDK: $500–$50K/month.
 API: $0.01–$0.10/call (100 free/month).
 Plugins: 30% commission.
@@ -81,11 +75,11 @@ Enterprise: $1M–$10M.
 App: Freemium + $1–$10 purchases.
 Data Marketplace: 20% fee on trends.
 
-
 Privacy Guarantee
+
 No raw data is uploaded—only encrypted weights are shared with the cloud for federated learning.
 
 Credits
 
 Built by MUTIU UMAR
-Last updated: 2025-07-01
+Last updated: 2025-08-02
