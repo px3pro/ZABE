@@ -1,4 +1,4 @@
-.venv/ 
+.venv311/ 
 1.1.5 
 lambda.zip
 *.zip
@@ -6,3 +6,4 @@ lambda.zip
 2.*
 __pycache__
 *.pyc
+.venv/
