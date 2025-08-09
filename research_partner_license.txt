@@ -1,0 +1,5 @@
+ZABE Researcher License
+- Free for academic/non-profit research.
+- Must cite ZABE in publications.
+- No commercial use without enterprise license.
+- Contact research@zabe.ai for approval.

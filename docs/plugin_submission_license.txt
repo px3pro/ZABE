@@ -1,0 +1,5 @@
+ZABE Plugin Submission License
+- Developers retain 50% revenue.
+- ZABE takes 30% commission, 20% for platform.
+- Must comply with AGPL and privacy standards.
+- Submit via GitHub Marketplace.
